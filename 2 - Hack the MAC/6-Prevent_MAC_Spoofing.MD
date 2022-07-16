@@ -12,7 +12,7 @@ MAC Spoofing can be a big problem on shared segment networks. However, the curre
 
 ## **Using ARP Tables**
 
-*
-*
-*
+* The use of static ARP table in combination with the routing table could prevent most of the shared-segment spoofing possibilities.
+* Most OS by default do not check if a recieved IP datagram originated from a local MAC address matches the MAC addresses in the static ARP table or if the external datagram matches the MAC address of one the known network routers that have a valid route entry in the routing table.
+* Unauthorized MAC address are therefore exposed, and the decision to take defensive action can then take place.
 
